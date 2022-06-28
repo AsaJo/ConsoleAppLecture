@@ -35,7 +35,7 @@ internal class Program
         //Console.WriteLine(message);
         //Console.ReadKey();
 
-        //*********************************** Data – Evaluation Order*****************************************************
+        //*********************************** Data – Evaluation Order *****************************************************
 
 
         //int numA;                                 // Declaration
@@ -141,29 +141,63 @@ internal class Program
         //}
 
         //********************************** Methods - Definition *****************************************************************
-        GetStringFromUser();
-        GetStringFromUser(bool);
+        //https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-7.3/improved-overload-candidates
+        //#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+        //        string a = GetStringFromUser();
+        //#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+        //#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+        //        string b = GetStringFromUser();
+        //#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+        //        //GetStringFromUser();
+        //        //GetStringFromUser(true);
 
-        //static string? GetStringFromUser()
-        //{
-        //    string? userString = Console.ReadLine();
-        //    return userString;
+
+        //        static string? GetStringFromUser()
+        //        {
+        //            string? userString = Console.ReadLine();
+        //            return userString;
+        //        }
+        //        static string? GetStringFromUser(bool upperCase)
+        //        {
+
+        //            string? userString = Console.ReadLine();
+        //            if (upperCase)
+        //            {
+
+        //                userString = userString.ToUpper();
+        //            }
+        //            return userString;
+
+        //        }
+        //********************************* Flow Chart - Reusing Method ****************************************************************
+
+        //int? a = ToNumber(Console.ReadLine());
+        //int? b = ToNumber(Console.ReadLine());
+
+        //if (a>b){
+        //    Console.WriteLine("a is bigger then b");
+        //}
+        //else{
+        //    Console.WriteLine("b is bigger then a");
+        //}
+        //static int ToNumber(string input) { 
+        //    int num=0;
+        //    int.TryParse(input, out num);
+        //    return num; 
         //}
 
-        static string? GetStringFromUser()
-        {
-            string? userString = Console.ReadLine();
-            return userString;
-        }
-        static string GetStringFromUser(bool upperCase)
-        {
-            string? userString = Console.ReadLine();
-            if (upperCase)
-            {
-                userString = userString.ToUpperUpper();
-            }
-        }
-        return userString;
+        
+        //string a = GetStringFromUser();
+
+
+        //        static string? GetStringFromUser()
+        //        {
+        //            string? userString = Console.ReadLine();
+        //            return userString;
+        //        }
+
+
     }
 
+    
 }
